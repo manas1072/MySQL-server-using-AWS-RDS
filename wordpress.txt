@@ -1,0 +1,33 @@
+Epel Release-
+
+	dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+
+Remi Repo-
+
+	dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
+
+Install Php 7.4
+
+	dnf module install php:remi-7.4
+
+Php-Mysqlnd
+
+	dnf install php-mysqlnd -y
+
+Install MYSQL
+
+	dnf install mysql -y
+
+WordPress installation package -
+
+	wget https://wordpress.org/latest.tar.gz
+
+Unzip and unarchive the installation package-
+
+	tar -xzf latest.tar.gz
+
+Copy Wordpress To Document Root-
+
+	cp -r wordpress/ /var/www/html/
+
+
